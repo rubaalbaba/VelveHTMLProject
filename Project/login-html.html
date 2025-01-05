@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Jamal Tawfiq Fathy 202220487-->
+    <title>Login Page</title>
+    <style>
+        /* تصميم الجسم والخلفية */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('img/login.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* تصميم شريط التنقل */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* تصميم نموذج تسجيل الدخول */
+        .login-container {
+            max-width: 350px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-container h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: #004d99;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <div class="navbar">
+        <a href="HomePage.html">Home</a>
+        <a href="obout.html">About</a>
+        <a href="Product.html">Products</a>
+        <a href="Contact-Us.html">Contact Us</a>
+        <a href="Blog.html">Blog</a>
+    </div>
+
+    <!-- نموذج تسجيل الدخول -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
